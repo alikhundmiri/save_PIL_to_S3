@@ -10,10 +10,10 @@ I have been trying to find a solution which works for quite a while, and after m
 
 The following events takes place.
 1. A new image is created using `PIL`
-	- This image consists of three images (different shades or brown(?)) stiched together.
+	- This image consists of three images (different shades of brown(?)) stiched together.
 2. This new image is saved inside of `buffer`, which is `BytesIO()`
 3. Buffer is reset to 0. (no idea why this is necessary, but it is. :/)
-4. Image is uploaded to your bucket.
+4. Image is uploaded to your bucket using `Boto3`
 
 
 ## Whats in the box!
