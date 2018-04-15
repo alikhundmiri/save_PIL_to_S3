@@ -1,3 +1,11 @@
+
+"""
+Thank you keithweaver for this. 
+
+keithweaver - https://github.com/keithweaver
+code - https://github.com/keithweaver/python-aws-s3
+"""
+
 import boto3
 from botocore.client import Config
 
