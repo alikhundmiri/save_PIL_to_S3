@@ -7,7 +7,7 @@ import os
 import sys
 
 #  stringify the image (?)
-from io import StringIO, BytesIO
+from io import BytesIO
 
 import boto3
 from botocore.client import Config
@@ -37,9 +37,9 @@ def get_image():
 # This is working!
 def sample_upload(image):
 	# Enter the image name
-	IMAGE_NAME = 'sample_3'
+	IMAGE_NAME = 'sample_image'
 	# Enter the bucket name
-	BUCKET_NAME = ''
+	BUCKET_NAME = '' # <--- Bucket name
 	# Create a buffer
 	buffer = BytesIO()
 	# save the image onto buffer
@@ -51,13 +51,8 @@ def sample_upload(image):
 
 def main():
 	image = get_image()
-
 	sample_upload(image)
 	
-
-	# image.show()
-
-
 
 if __name__ == '__main__':
 	main()
